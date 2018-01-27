@@ -1,7 +1,7 @@
 # lwf-checker
 Current version: 1.0
 
-This script checks the status of your Shiftnrg Delegate by using PHP.<br>
+This script checks the status of your LWF Delegate by using PHP.<br>
 Feel free to rewrite in Python or Bash. 
  
 This script will also check whether your node has forked or not.<br>
@@ -38,7 +38,7 @@ Be sure that your php.ini allows passthru(). It's default that it does though, s
 ```
 sudo apt install php php-cli php-mbstring php-sqlite3
 ```
-* shift-snapshot.sh: https://github.com/smauelpaulsun/lwf-snapshot
+* lwf-snapshot.sh: https://github.com/samuelpaulsun/lwf-snapshot
 
 ## Installation
 You can clone this into every directory of your choosing. I usually just clone it into my home folder.
