@@ -64,20 +64,20 @@ echo "[ CONSENSUS ]\n";
           }
           echo "\t\t\tConsensus slave: $consensusSlave %\n";
           
-          // If consensus on the slave is below threshold as well, send a telegram message and restart Shift!
+          // If consensus on the slave is below threshold as well, send a telegram message and restart LWF!
           if($consensusSlave <= $threshold){
-            echo "\t\t\tThreshold on slave node reached! Telegram: No healthy server online. Going to restart Shift for you..\n";
+            echo "\t\t\tThreshold on slave node reached! Telegram: No healthy server online. Going to restart LWF for you..\n";
             
             // Send Telegram
             if($telegramEnable === true){
-              $Tmsg = gethostname().": No healthy server online. Going to restart SHIFT for you..";
+              $Tmsg = gethostname().": No healthy server online. Going to restart LWF for you..";
               passthru("curl -s -d 'chat_id=$telegramId&text=$Tmsg' $telegramSendMessage >/dev/null");
             }
 
-            // Restart Shift
+            // Restart LWF
             echo "\t\t\tStopping all forever processes...\n";
               passthru("forever stopall");
-            echo "\t\t\tStarting Shift forever proces...\n";
+            echo "\t\t\tStarting LWF forever proces...\n";
               passthru("cd $pathtoapp && forever start app.js");
               
           }else{
@@ -148,20 +148,20 @@ echo "[ CONSENSUS ]\n";
           }
           echo "\t\t\tConsensus slave: $consensusSlave %\n";
           
-          // If consensus on the slave is below threshold as well, send a telegram message and restart Shift!
+          // If consensus on the slave is below threshold as well, send a telegram message and restart LWF!
           if($consensusSlave <= $threshold){
-            echo "\t\t\tThreshold on slave node reached! Telegram: No healthy server online. Going to restart Shift for you..\n";
+            echo "\t\t\tThreshold on slave node reached! Telegram: No healthy server online. Going to restart LWF for you..\n";
             
             // Send Telegram
             if($telegramEnable === true){
-              $Tmsg = gethostname().": No healthy server online. Going to restart SHIFT for you..";
+              $Tmsg = gethostname().": No healthy server online. Going to restart LWF for you..";
               passthru("curl -s -d 'chat_id=$telegramId&text=$Tmsg' $telegramSendMessage >/dev/null");
             }
 
-            // Restart Shift
+            // Restart LWF
             echo "\t\t\tStopping all forever processes...\n";
               passthru("forever stopall");
-            echo "\t\t\tStarting Shift forever proces...\n";
+            echo "\t\t\tStarting LWF forever proces...\n";
               passthru("cd $pathtoapp && forever start app.js");
           }else{
             echo "\t\t\tConsensus on slave is sufficient enough to switch to..\n";
@@ -219,12 +219,12 @@ echo "[ CONSENSUS ]\n";
             
             // If consensus is the same as or lower than the set threshold..
             if($consensusMaster <= $threshold){
-              echo "\t\t\tThreshold on master node reached as well! Restarting Shift..\n";
+              echo "\t\t\tThreshold on master node reached as well! Restarting LWF..\n";
 
-              // Restart Shift
+              // Restart LWF
               echo "\t\t\tStopping all forever processes...\n";
                 passthru("forever stopall");
-              echo "\t\t\tStarting Shift forever proces...\n";
+              echo "\t\t\tStarting LWF forever proces...\n";
                 passthru("cd $pathtoapp && forever start app.js");
 
             }else{
