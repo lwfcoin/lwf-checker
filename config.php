@@ -14,7 +14,7 @@ __________________________ */
 
 // You may leave the settings below as they are...
 	$date		= date("Y-m-d H:i:s");			// Current date
-	$pathtoapp	= $homeDir."kwf-node/";			// Full path to your lwf installation	
+	$pathtoapp	= $homeDir."lwf-node/";			// Full path to your lwf installation	
 	$baseDir	= dirname(__FILE__)."/";		// Folder which contains THIS file
 	$lockfile	= $baseDir."checkdelegate.lock";	// Name of our lock file
 	$database	= $baseDir."check_fork.sqlite3";	// Database name to use
