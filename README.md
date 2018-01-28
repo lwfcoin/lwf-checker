@@ -25,6 +25,12 @@ Also, you have to give access to the forging API calls for both nodes. Like this
     },
 ```
 
+After adding your slavenode IP to your masternode, or your masternode IP to your slavenode config.json, make sure to reload LWF with:
+
+```
+./lwf_manager.bash reload
+```
+
 There are some echo lines in this file.<br>
 When you redirect output to a log file in your crontab, these lines will show up. <br>
 See section Example crontab for more information.
@@ -84,3 +90,10 @@ Seatrips (create snapshot when status is okay)
 Mrgr (Shift snapshots)
 * Shiftnrg Slack: https://shiftnrg.slack.com/team/mrgr
 * Github: https://github.com/mrgrshift
+
+## Donations
+
+If you find this helpful and would like to donate, here you go:
+LWF = 4264922882619509863LWF
+SHIFT = 1202102259685170158S
+OXY = 4851450110347849329X
