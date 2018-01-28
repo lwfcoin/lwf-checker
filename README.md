@@ -19,13 +19,14 @@ Also, you have to give access to the forging API calls for both nodes. Like this
         "secret": [],
         "access": {
             "whiteList": [
-                "127.0.0.1","1.2.3.4",
+                "127.0.0.1",
+                "1.2.3.4"
             ]
         }
     },
 ```
 
-After adding your slavenode IP to your masternode, or your masternode IP to your slavenode config.json, make sure to reload LWF with:
+After adding your slavenode IP to your masternode, or your masternode IP to your slavenode config.json. While still in the lwf-node directory, make sure to reload LWF with:
 
 ```
 ./lwf_manager.bash reload
