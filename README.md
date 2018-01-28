@@ -79,11 +79,12 @@ $telegramApiKey 	= "1122334455:AAEhBOweik6ad9r_QXMENQjcrGbqCr4K-bs";
 * Start a conversation with your bot (username) to enable communication between you two
 
 ## Contact 
-* Twitter: [@lepetitjan](https://twitter.com/lepetitjan) 
-* ShiftNrg E-mail: [jan@shiftnrg.org](mailto:jan@shiftnrg.org) 
 
+* Slack: https://lwfcoin.slack.com/ @samuel_paulsun
 
 ## Contributors
+* Twitter: [@lepetitjan](https://twitter.com/lepetitjan) 
+
 Seatrips (create snapshot when status is okay)
 * Twitter: [@seatrips<br>](https://twitter.com/seatrips)
 
